@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>PodVibes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <!--Navbar-->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="../img/logo.svg" alt="Logo"></a>
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <img class="on-air ms-5" src="../img/onair.gif" alt="On-Air">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto gap-3">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link" href="../html/podcast1.html">Podcast</a>
+                            <a class="nav-link" href="../html/servicios.html">Servicios</a>
+                            <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--Carousel, slider-->
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-12">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner mb-5">
+                            <div class="carousel-item active">
+                                <img src="../img/Podcast2.jpeg" class="d-block w-100" alt="carousel1">
+                                <div class="carousel-caption text-center">
+                                    <h5>Bienvenidos a nuestra comunidad
+                                        <br> de Podcasters
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/Podcast1.jpeg" class="d-block w-100" alt="carousel2">
+                                <div class="carousel-caption text-center">
+                                    <h5>Tanto novatos como expertos
+                                        <br> pueden compartir sus historias
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/Podcast3.jpeg" class="d-block w-100" alt="carousel3">
+                                <div class="carousel-caption text-center">
+                                    <h5>Unete a nosotros
+                                        <br>¡La comunidad está esperando tu voz!
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--SECCIÓN PODCAST MÁS ESCUCHADOS-->
+        <section>
+            <div class="container mt-5">
+                <!--Título sección-->
+                <div class="encabezado-podcast p-3">
+                    <h1><span>PODCAST</span> MÁS ESCUCHADOS</h1>
+                    <hr class="mb-5">
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                    <!--Card 1-->
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="../img/card1.png" class="card-img-top" alt="Hyper movidas">
+                            <div class="card-body">
+                                <h5 class="card-title">Hyper Movidas</h5>
+                                <p class="card-text"> Nueva emisión de Quantumfracture y Galder varas</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-success" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Ver más</button>
+                                    <!--Tooltip-->
+                                    <i class="bi bi-star-fill" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="¡Valoración de los usuarios!"> 5</i>
+                                    <!-- MODAL -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">HYPER MOVIDAS
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Bienvenidos a HIPERMOVIDAS, un podcast que pretende ser sobre
+                                                    ciencia, bueno,
+                                                    eso es lo que pretenden QuantumFracture (@QuantumFracture) y sus
+                                                    expertísimos invitados,
+                                                    pero claro, en la mesa se enfrenta a Galder Varas (@galdervaras) y a
+                                                    sus tontísimos invitados.
+                                                    No sabemos lo que saldrá de esta combinación imposible,
+                                                    pero como en los mejores experimentos, los elementos mezclados son
+                                                    los mejores posibles,
+                                                    y aquí estamos para observar el resultado.
+                                                    <div
+                                                        class="card bg-body-secondary p-2 d-flex flex-row justify-content-between align-items-center mt-3">
+                                                        <p class="text-center mt-2">Escucha un poco del clip</p>
+                                                        <p class="text-center mt-2">0:46</p>
+                                                        <i class="bi bi-play-circle-fill text-success display-6"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Cerrar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--CIERRE MODAL-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 2-->
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="../img/card2.png" class="card-img-top" alt="El sentido de la birra">
+                            <div class="card-body">
+                                <h5 class="card-title">El sentido de la birra</h5>
+                                <p class="card-text">Tronchate de risa con Ricardo Moya</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-success" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#example2Modal">Ver más</button>
+                                    <!--Tooltip-->
+                                    <i class="bi bi-star-fill" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="¡Valoración de los usuarios!"> 7.2</i>
+                                    <!-- MODAL -->
+                                    <div class="modal fade" id="example2Modal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">EL SENTIDO DE LA
+                                                        BIRRA</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    El Sentido De La Birra es un videopodcast de charlas con cerveza
+                                                    para una inmensa minoría en el que el polifacético artista Ricardo
+                                                    Moya (@ricardo_moya)
+                                                    muestra la cara más cercana de personajes públicos y acercar a la
+                                                    audiencia también a personas desconocidas con un conocimiento que
+                                                    compartir o una historia que contar.
+                                                    <div
+                                                        class="card bg-body-secondary p-2 d-flex flex-row justify-content-between align-items-center mt-3">
+                                                        <p class="text-center mt-2">Escucha un poco del clip</p>
+                                                        <p class="text-center mt-2">0:35</p>
+                                                        <i class="bi bi-play-circle-fill text-success display-6"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Cerrar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--CIERRE MODAL-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 3-->
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="../img/card3.jpg" class="card-img-top" alt="Memory Card">
+                            <div class="card-body">
+                                <h5 class="card-title">Memory Card</h5>
+                                <p class="card-text">Luzu y Lana en estado puro</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-success" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#example3Modal">Ver más</button>
+                                    <!--Tooltip-->
+                                    <i class="bi bi-star-fill" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="¡Valoración de los usuarios!"> 4,5</i>
+                                    <!-- MODAL -->
+                                    <div class="modal fade" id="example3Modal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">MEMORY CARD</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ¿Tú también te acuerdas de la mágica década de los 90? Si tu
+                                                    infancia o adolescencia han estado marcadas por un mundo sin
+                                                    móviles,
+                                                    los juegos de mesa, consolas emblemáticas como la Game Boy o la
+                                                    Super Nintendo, por bandas musicales como las Spice Girls, Nirvana o
+                                                    los
+                                                    Backstreet Boys, y por objetos como los tazos, los walkmans o los
+                                                    tamagochi, no te puedes perder este podcast.
+                                                    Memory Card es un show que trae de vuelta la nostalgia de los años
+                                                    90 y 2000 para recordar cómo vivimos estos increibles años de la
+                                                    industria del cine, las revistas,
+                                                    los videojuegos o la música.
+                                                    <div
+                                                        class="card bg-body-secondary p-2 d-flex flex-row justify-content-between align-items-center mt-3">
+                                                        <p class="text-center mt-2">Escucha un poco del clip</p>
+                                                        <p class="text-center mt-2">0:55</p>
+                                                        <i class="bi bi-play-circle-fill text-success display-6"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Cerrar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--CIERRE MODAL-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--Botón navegación galería-->
+                    </div>
+                    <a class="btn btn-outline-success w-25 mx-auto mb-5" href="../html/podcast1.html">¡Ver todos los
+                        Podcast!</a>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCIÓN FORO-->
+        <section>
+            <img class="fondo" src="../img/image.png" alt="fondo-foro">
+
+            <div class="container-fluid p-4 foro">
+                <div class="container encabezado-foro p-3">
+                    <h1><span>FORO</span> DE LA COMUNIDAD</h1>
+                    <hr class="mb-5">
+                </div>
+                <!--Contenedores de cards/comentarios-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 mb-4 mx-auto">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <div class="title-foro d-flex gap-2 mb-2">
+                                        <i class="bi bi-person-fill"></i>
+                                        <h5 class="card-title">Marina</h5>
+                                    </div>
+                                    <div class="contenido-foro d-flex justify-content-between">
+                                        <p class="card-text">Gracias por compartir. Estoy deseando más.</p>
+                                        <p class="card-text text-secondary"> Just now</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 mb-4 mx-auto">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <div class="title-foro d-flex gap-2 mb-2">
+                                        <i class="bi bi-person-fill"></i>
+                                        <h5 class="card-title">Juan</h5>
+                                    </div>
+                                    <div class="contenido-foro d-flex justify-content-between">
+                                        <p class="card-text">¡Los mejores podcast los tienen aqui!.</p>
+                                        <p class="card-text text-secondary"> 22/01/2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 mb-4 mx-auto">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <div class="title-foro d-flex gap-2 mb-2">
+                                        <i class="bi bi-person-fill"></i>
+                                        <h5 class="card-title">Lorena</h5>
+                                    </div>
+                                    <div class="contenido-foro d-flex justify-content-between">
+                                        <p class="card-text">Muy economicos y buen contenido.</p>
+                                        <p class="card-text text-secondary"> 20/01/2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Agregar comentario-->
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="comentario" class="form-label text-white">Comentario:</label>
+                                    <textarea class="form-control" id="comentario" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-outline-light">Agregar Comentario</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="p-5 text-white">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4 logo-footer d-flex gap-4 align-items-center mb-3">
+                    <img src="../img/logo-footer.svg" alt="Logo-footer">
+                    <p>Comunidad de podcasters en la que encontraras
+                        todas las emisiones disponibles hasta la fecha.
+                        <br>
+                        ¡Comparte, crea y escucha!
+                    </p>
+                </div>
+                <div class="col-md-4 d-flex flex-column gap-2 align-items-center mb-4">
+                    <p>Puedes seguirnos en:</p>
+                    <i class="bi bi-facebook"> Facebook</i>
+                    <i class="bi bi-instagram"> Instagram</i>
+                    <i class="bi bi-youtube"> Youtube</i>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p>Página desarrollada con Bootstrap por:
+                        <br>
+                        Diego Garcia Rocha
+                    </p>
+                    <img style="width: 80px;" src="../img/Bootstrap_logo.svg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    // Inicializar los tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+</script>
+
+
+</html>
